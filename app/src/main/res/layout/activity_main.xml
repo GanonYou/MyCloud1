@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.ywy.mycloud1.MainActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:id="@+id/tv1"
+        android:layout_marginTop="154dp"
+        android:layout_below="@+id/pb"
+        android:layout_alignParentStart="true" />
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pb"
+        android:visibility="invisible"/>
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_choose"
+        android:text="选择文件"
+
+        android:layout_alignTop="@+id/btn_download"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_upload"
+        android:text="上传文件"
+        android:layout_alignTop="@+id/btn_display"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_download"
+        android:text="下载文件"
+        android:layout_above="@+id/btn_display"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_display"
+        android:text="显示下载文件"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+
+
+</RelativeLayout>
